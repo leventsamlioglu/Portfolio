@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; }
+
+ul {
+  list-style: none; }
+
+a {
+  text-decoration: none;
+  color: inherit; }
+
+.btn-primary {
+  background-color: #ff0404;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  border-bottom: transparent; }
+
+.btn-secondary {
+  background-color: #ffbc00;
+  padding: 0.5rem 1rem;
+  border-radius: 5px; }
+  .btn-secondary.bt-2 {
+    padding: 0.5rem 3.5ch; }
+
+#navbar {
+  display: flex;
+  position: sticky;
+  top: 0;
+  background-color: rgba(100, 100, 100, 0.7);
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1;
+  height: 50px; }
+  #navbar img {
+    width: auto;
+    height: 50px;
+    margin-left: 1rem; }
+  #navbar ul {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 0px;
+    margin-right: 1rem; }
+    #navbar ul li {
+      padding: 0.5rem;
+      margin: 0 1rem; }
+  #navbar a {
+    color: #f4f4f4;
+    border-bottom: 3px transparent solid;
+    padding-bottom: 0.5rem;
+    transition: border-color 0.5s; }
+    #navbar a.btn-primary.btn {
+      border: none;
+      opacity: 0.8; }
+    #navbar a:hover {
+      border-color: #f4f4f4; }
+    #navbar a.btn-primary:hover {
+      opacity: 1; }
+    #navbar a.current {
+      border-color: coral; }
+
+section {
+  height: calc(100vh - 50px);
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  section .hero {
+    display: flex;
+    width: 100%; }
+    section .hero .hero-content {
+      display: flex;
+      flex-grow: 4;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+      section .hero .hero-content h1 {
+        padding: 1rem 2rem;
+        font-size: 3rem;
+        color: #666; }
+      section .hero .hero-content p {
+        padding: 1rem 2rem;
+        font-size: 2rem;
+        width: 17ch;
+        text-align: center;
+        color: #ccc; }
+      section .hero .hero-content ul {
+        display: flex;
+        margin-top: 2rem; }
+        section .hero .hero-content ul li {
+          margin: 1rem 2rem; }
+    section .hero a {
+      opacity: 0.8;
+      transition: all 0.5s; }
+    section .hero .bt-1:hover,
+    section .hero .bt-2:hover {
+      background-color: #666;
+      color: #ffbc00; }
+    section .hero .hero-img {
+      flex-grow: 6;
+      display: flex;
+      justify-content: center; }
+      section .hero .hero-img img {
+        width: 80%; }
