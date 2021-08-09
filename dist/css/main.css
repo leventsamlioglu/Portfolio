@@ -18,7 +18,7 @@ a {
   border-bottom: transparent; }
 
 .btn-secondary {
-  background-color: #ffbc00;
+  background-color: #ff7f50;
   padding: 0.5rem 1rem;
   border-radius: 5px; }
   .btn-secondary.bt-2 {
@@ -58,47 +58,84 @@ a {
     #navbar a.btn-primary:hover {
       opacity: 1; }
     #navbar a.current {
-      border-color: coral; }
+      border-color: #ff7f50; }
 
-section {
+main {
   height: calc(100vh - 50px);
   display: flex;
   align-items: center;
-  justify-content: center; }
-  section .hero {
+  justify-content: center;
+  margin-bottom: 3rem; }
+  main .hero {
     display: flex;
-    width: 100%; }
-    section .hero .hero-content {
+    width: 100%;
+    height: 100%; }
+    main .hero .hero-content {
       display: flex;
       flex-grow: 4;
       flex-direction: column;
       justify-content: center;
       align-items: center; }
-      section .hero .hero-content h1 {
+      main .hero .hero-content h1 {
         padding: 1rem 2rem;
         font-size: 3rem;
         color: #666; }
-      section .hero .hero-content p {
+      main .hero .hero-content p {
         padding: 1rem 2rem;
         font-size: 2rem;
         width: 17ch;
         text-align: center;
         color: #ccc; }
-      section .hero .hero-content ul {
+      main .hero .hero-content ul {
         display: flex;
         margin-top: 2rem; }
-        section .hero .hero-content ul li {
+        main .hero .hero-content ul li {
           margin: 1rem 2rem; }
-    section .hero a {
+    main .hero a {
       opacity: 0.8;
       transition: all 0.5s; }
-    section .hero .bt-1:hover,
-    section .hero .bt-2:hover {
+    main .hero .bt-1:hover,
+    main .hero .bt-2:hover {
       background-color: #666;
-      color: #ffbc00; }
-    section .hero .hero-img {
-      flex-grow: 6;
+      color: #ff7f50; }
+    main .hero .hero-img {
       display: flex;
+      flex-grow: 6;
       justify-content: center; }
-      section .hero .hero-img img {
+      main .hero .hero-img img {
         width: 80%; }
+
+section {
+  height: calc(100vh - 50px);
+  display: flex;
+  background: url(/dist/images/background1.jpeg) right center/cover;
+  color: #666; }
+  section .section-img {
+    display: flex;
+    width: 100%;
+    justify-content: center; }
+  section .section-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center; }
+    section .section-content h2 {
+      font-size: 3rem;
+      color: #ff7f50;
+      font-weight: 100; }
+    section .section-content .best {
+      display: flex;
+      flex-direction: column; }
+      section .section-content .best h3 {
+        text-align: center; }
+      section .section-content .best .best-right {
+        display: flex;
+        justify-content: space-between;
+        align-items: center; }
+        section .section-content .best .best-right i .fab,
+        section .section-content .best .best-right i .fas {
+          font-size: 10rem;
+          background-color: #ff0404; }
+        section .section-content .best .best-right p {
+          padding: 0.5rem 4rem;
+          line-height: 1.5rem; }
